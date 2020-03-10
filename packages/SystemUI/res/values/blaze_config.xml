@@ -78,4 +78,7 @@
 
     <!-- Whether to find optimal display refresh rate when using udfps -->
     <bool name="config_udfpsOptimalRefreshRate">true</bool>
+
+    <!-- FPSInfoService FPS node file path -->
+    <string name="config_fpsInfoSysNode" translatable="false"></string>
 </resources>
