@@ -467,18 +467,18 @@ public final class PixelPropsUtils {
         if (!SystemProperties.getBoolean(SPOOF_PIXEL_PI, true))
             return;
         // Alter build parameters to avoid hardware attestation enforcement
-        setPropValue("MANUFACTURER", "Google");
-        setPropValue("MODEL", "Pixel 9 Pro");
-        setPropValue("FINGERPRINT", "google/caiman/caiman:14/AD1A.240530.047.U1/12150698:user/release-keys");
         setPropValue("BRAND", "google");
-        setPropValue("PRODUCT", "caiman");
-        setPropValue("DEVICE", "caiman");
-        setVersionFieldString("RELEASE", "14");
-        setPropValue("ID", "AD1A.240530.047.U1");
-        setVersionFieldString("INCREMENTAL", "12150698");
-        setPropValue("TYPE", "user");
+        setPropValue("MANUFACTURER", "Google");
+        setPropValue("DEVICE", "akita");
+        setPropValue("ID", "15");
+        setPropValue("FINGERPRINT", "google/akita_beta/akita:15/AP31.240617.015/12207491:user/release-keys");
+        setPropValue("MODEL", "Pixel 8a");
+        setPropValue("PRODUCT", "akita_beta");
         setPropValue("TAGS", "release-keys");
+        setPropValue("TYPE", "user");
         setVersionFieldString("SECURITY_PATCH", "2024-08-05");
-        setVersionFieldInt("DEVICE_INITIAL_SDK_INT", 34);
+        setVersionFieldString("RELEASE", "15");
+        setVersionFieldString("INCREMENTAL", "12207491");
+        setVersionFieldInt("DEVICE_INITIAL_SDK_INT", 24);
     }
 }
