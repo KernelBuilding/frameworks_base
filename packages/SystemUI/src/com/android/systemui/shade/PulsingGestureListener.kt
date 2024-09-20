@@ -125,10 +125,10 @@ class PulsingGestureListener @Inject constructor(
     override fun onDoubleTapEvent(e: MotionEvent): Boolean {
         // React to the [MotionEvent.ACTION_UP] event after double tap is detected. Falsing
         // checks MUST be on the ACTION_UP event.
-        if (e.actionMasked == MotionEvent.ACTION_UP && !falsingManager.isFalseDoubleTap) {
-            if (statusBarStateController.isDozing &&
+        if (e.actionMasked == MotionEvent.ACTION_UP &&
+                statusBarStateController.isDozing &&
                 (doubleTapEnabled || singleTapEnabled || doubleTapEnabledNative) &&
-                !falsingManager.isProximityNear
+                !falsingManager.isProximityNear && !falsingManager.isFalseDoubleTap
         ) {
             powerInteractor.wakeUpIfDozing("PULSING_DOUBLE_TAP", PowerManager.WAKE_REASON_TAP)
             return true
@@ -139,7 +139,6 @@ class PulsingGestureListener @Inject constructor(
         powerManager.goToSleep(e.getEventTime())
         return true
     }
-        }
         return false
     }
 
