@@ -23,13 +23,13 @@ import android.os.Handler;
 import android.provider.Settings;
 import android.util.Log;
 
-public class BlazeThemeController {
+public class ScandiumThemeController {
 
-    private static final String TAG = "BlazeThemeController";
+    private static final String TAG = "ScandiumThemeController";
     private final ContentResolver mContentResolver;
     private final Handler mBackgroundHandler;
 
-    public BlazeThemeController(ContentResolver contentResolver, Handler backgroundHandler) {
+    public ScandiumThemeController(ContentResolver contentResolver, Handler backgroundHandler) {
         this.mContentResolver = contentResolver;
         this.mBackgroundHandler = backgroundHandler;
     }

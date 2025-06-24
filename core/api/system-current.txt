@@ -2663,7 +2663,7 @@ package android.app.smartspace {
     field @NonNull public static final android.os.Parcelable.Creator<android.app.smartspace.SmartspaceTarget> CREATOR;
     field public static final int FEATURE_ALARM = 7; // 0x7
     field public static final int FEATURE_BEDTIME_ROUTINE = 16; // 0x10
-    field public static final int FEATURE_BLAZE_BUILD_PROGRESS = 40; // 0x28
+    field public static final int FEATURE_SCANDIUM_BUILD_PROGRESS = 40; // 0x28
     field public static final int FEATURE_CALENDAR = 2; // 0x2
     field public static final int FEATURE_COMMUTE_TIME = 3; // 0x3
     field public static final int FEATURE_CONSENT = 11; // 0xb

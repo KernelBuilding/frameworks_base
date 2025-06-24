@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.android.systemui.blaze
+package com.android.systemui.scandium
 
 import com.android.systemui.qs.tileimpl.QSTileImpl
 import com.android.systemui.qs.tiles.AmbientDisplayTile
@@ -40,7 +40,7 @@ import dagger.multibindings.IntoMap
 import dagger.multibindings.StringKey
 
 @Module
-interface BlazeModule {
+interface ScandiumModule {
     /** Inject AmbientDisplayTile into tileMap in QSModule */
     @Binds
     @IntoMap

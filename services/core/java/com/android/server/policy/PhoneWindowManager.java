@@ -221,7 +221,7 @@ import com.android.internal.policy.LogDecelerateInterpolator;
 import com.android.internal.policy.PhoneWindow;
 import com.android.internal.policy.TransitionAnimation;
 import com.android.internal.statusbar.IStatusBarService;
-import com.android.internal.util.blaze.BlazeUtils;
+import com.android.internal.util.scandium.ScandiumUtils;
 import com.android.internal.widget.LockPatternUtils;
 import com.android.server.AccessibilityManagerInternal;
 import com.android.server.ExtconStateObserver;
@@ -1425,8 +1425,8 @@ public class PhoneWindowManager implements WindowManagerPolicy {
     }
 
     private boolean toggleFlashLight() {
-        if (mTorchActionMode != 0 && BlazeUtils.deviceHasFlashlight(mContext)) {
-            BlazeUtils.toggleCameraFlash();
+        if (mTorchActionMode != 0 && ScandiumUtils.deviceHasFlashlight(mContext)) {
+            ScandiumUtils.toggleCameraFlash();
             return true;
         }
         return false;
@@ -6772,7 +6772,7 @@ public class PhoneWindowManager implements WindowManagerPolicy {
     public void sendCustomAction(Intent intent) {
         String action = intent.getAction();
         if (action != null) {
-            if (BlazeUtils.INTENT_SCREENSHOT.equals(action)) {
+            if (ScandiumUtils.INTENT_SCREENSHOT.equals(action)) {
                 interceptScreenshotChord(SCREENSHOT_KEY_OTHER, 0);
             }
         }

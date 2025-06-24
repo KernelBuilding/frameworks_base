@@ -72,7 +72,7 @@ import java.util.Objects;
 import java.util.StringJoiner;
 import java.util.concurrent.TimeoutException;
 
-import com.android.internal.util.blaze.PixelPropsUtils;
+import com.android.internal.util.scandium.PixelPropsUtils;
 
 /**
  * Base class for implementing application instrumentation code.  When running

@@ -65,7 +65,7 @@ public class UdfpsAnimation extends ImageView {
 
     private String[] mStyleNames;
 
-    private static final String UDFPS_ANIMATIONS_PACKAGE = "com.blaze.udfps.resources";
+    private static final String UDFPS_ANIMATIONS_PACKAGE = "com.scandium.udfps.resources";
 
     private Resources mApkResources;
 

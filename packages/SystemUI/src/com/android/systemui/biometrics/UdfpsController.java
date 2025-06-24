@@ -844,8 +844,8 @@ public class UdfpsController implements DozeReceiver, Dumpable {
             );
         }
 
-        if (com.android.internal.util.blaze.BlazeUtils.isPackageInstalled(mContext,
-                "com.blaze.udfps.resources")) {
+        if (com.android.internal.util.scandium.ScandiumUtils.isPackageInstalled(mContext,
+                "com.scandium.udfps.resources")) {
             mUdfpsAnimation = new UdfpsAnimation(mContext, mWindowManager, mSensorProps);
         }
     }

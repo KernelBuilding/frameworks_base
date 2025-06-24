@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.systemui.blaze.logo;
+package com.android.systemui.scandium.logo;
 
 import android.content.Context;
 import android.util.AttributeSet;

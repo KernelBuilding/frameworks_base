@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package com.android.systemui.blaze.logo;
+package com.android.systemui.scandium.logo;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -163,7 +163,7 @@ public abstract class LogoImage extends ImageView implements DarkReceiver {
                 drawable = mContext.getResources().getDrawable(R.drawable.ic_emoticon_devil);
                 break;
             case 13:
-                drawable = mContext.getResources().getDrawable(R.drawable.ic_blaze);
+                drawable = mContext.getResources().getDrawable(R.drawable.ic_scandium);
                 break;
             case 14:
                 drawable = mContext.getResources().getDrawable(R.drawable.ic_heart);

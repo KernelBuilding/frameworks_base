@@ -50,7 +50,7 @@ import android.util.Slog
 
 import com.android.internal.R
 import com.android.internal.annotations.GuardedBy
-import com.android.internal.util.blaze.BlazeUtils
+import com.android.internal.util.scandium.ScandiumUtils
 import com.android.server.LocalServices
 import com.android.server.SystemService
 import com.android.server.app.AppLockManagerServiceInternal
@@ -495,7 +495,7 @@ class AppLockManagerService(
                 userId
             )
             if (!aInfo.isSystemApp()) return
-            if (BlazeUtils.launchablePackages(context).contains(pkg)) return
+            if (ScandiumUtils.launchablePackages(context).contains(pkg)) return
             if (!whiteListedSystemApps.contains(pkg))
                 throw IllegalArgumentException("System package $pkg is not whitelisted")
         } catch(e: PackageManager.NameNotFoundException) {

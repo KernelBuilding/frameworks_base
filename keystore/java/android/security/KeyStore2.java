@@ -34,7 +34,7 @@ import android.util.Log;
 
 import java.util.Calendar;
 
-import com.android.internal.util.blaze.AttestationHooks;
+import com.android.internal.util.scandium.AttestationHooks;
 
 /**
  * @hide This should not be made public in its present form because it

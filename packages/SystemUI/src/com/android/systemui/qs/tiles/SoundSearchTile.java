@@ -30,7 +30,7 @@ import androidx.annotation.Nullable;
 
 import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.nano.MetricsProto.MetricsEvent;
-import com.android.internal.util.blaze.BlazeUtils;
+import com.android.internal.util.scandium.ScandiumUtils;
 import com.android.systemui.Dependency;
 import com.android.systemui.res.R;
 import com.android.systemui.dagger.qualifiers.Background;
@@ -73,20 +73,20 @@ public class SoundSearchTile extends QSTileImpl<BooleanState> {
 
     @Override
     public int getMetricsCategory() {
-        return MetricsEvent.BLAZE_HOUSE;
+        return MetricsEvent.SCANDIUM_HOME;
     }
 
     @Override
     protected void handleClick(@Nullable View view) {
         mPanelInteractor.collapsePanels();
         // Soundhound
-        if (BlazeUtils.isPackageInstalled(mContext, "com.melodis.midomiMusicIdentifier.freemium") || BlazeUtils.isPackageInstalled(mContext, "com.melodis.midomiMusicIdentifier")) {
+        if (ScandiumUtils.isPackageInstalled(mContext, "com.melodis.midomiMusicIdentifier.freemium") || ScandiumUtils.isPackageInstalled(mContext, "com.melodis.midomiMusicIdentifier")) {
             Intent intent = new Intent(Intent.ACTION_MAIN);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             intent.setAction("com.soundhound.android.ID_NOW_EXTERNAL");
             mContext.startActivity(intent);
         // Google Search Music
-        } else if (BlazeUtils.isPackageInstalled(mContext, "com.google.android.googlequicksearchbox")) {
+        } else if (ScandiumUtils.isPackageInstalled(mContext, "com.google.android.googlequicksearchbox")) {
             Intent intent = new Intent(Intent.ACTION_MAIN);
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
             intent.setAction("com.google.android.googlequicksearchbox.MUSIC_SEARCH");

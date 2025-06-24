@@ -58,7 +58,7 @@
             android:visibility="gone"
         />
 
-        <com.android.systemui.blaze.logo.LogoImageViewRight
+        <com.android.systemui.scandium.logo.LogoImageViewRight
             android:id="@+id/statusbar_logo_right"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"

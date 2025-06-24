@@ -182,7 +182,7 @@ public final class SmartspaceTarget implements Parcelable {
     public static final int FEATURE_STEP_COUNTING = 37;
     public static final int FEATURE_EARTHQUAKE_ALERT = 38;
     public static final int FEATURE_STEP_DATE = 39; // This represents a DATE. "STEP" is a typo.
-    public static final int FEATURE_BLAZE_BUILD_PROGRESS = 40;
+    public static final int FEATURE_SCANDIUM_BUILD_PROGRESS = 40;
     public static final int FEATURE_EARTHQUAKE_OCCURRED = 41;
 
     /**
@@ -229,7 +229,7 @@ public final class SmartspaceTarget implements Parcelable {
             FEATURE_STEP_COUNTING,
             FEATURE_EARTHQUAKE_ALERT,
             FEATURE_STEP_DATE,
-            FEATURE_BLAZE_BUILD_PROGRESS,
+            FEATURE_SCANDIUM_BUILD_PROGRESS,
             FEATURE_EARTHQUAKE_OCCURRED
     })
     @Retention(RetentionPolicy.SOURCE)
